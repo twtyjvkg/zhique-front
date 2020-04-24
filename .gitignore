@@ -23,8 +23,10 @@ npm-debug.log*
 # idea
 .idea
 
+# react
+react-app-env.d.ts
+
 # yarn
 yarn.lock
 yarn-debug.log*
 yarn-error.log*
-

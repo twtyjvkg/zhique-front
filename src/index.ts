@@ -1,11 +1,11 @@
 import dva from 'dva';
-import App from './App';
+import ZhiQue from './ZhiQue';
 
 const app = dva({
     history: require('history').createBrowserHistory(),
 });
 
 // @ts-ignore
-app.router(App)
+app.router(ZhiQue)
 
 app.start('#root');
