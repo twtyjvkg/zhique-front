@@ -5,6 +5,8 @@ const app = dva({
     history: require('history').createBrowserHistory(),
 });
 
+window.dvaApp = app;
+
 // @ts-ignore
 app.router(ZhiQue)
 
