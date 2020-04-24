@@ -1,8 +1,6 @@
 import React from 'react';
 
-const TestLayout: React.FC = () => {
-    return <div>123</div>
-};
+const TestLayout: React.FC = () => <div>123</div>;
 
 export default TestLayout;
 

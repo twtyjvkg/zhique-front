@@ -3,7 +3,8 @@ import {RouterComponentProps} from "react-Routerr";
 
 export interface RouterConfig {
     path: string;
-    component?: React.ComponentType<RouterComponentProps<any>> | React.ComponentType<any>;
+    component?: Promise;
+    models?: Promise[];
     redirect?: string;
     children?: RouterConfig[];
 }

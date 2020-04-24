@@ -4,7 +4,7 @@ import { RoutersConfig } from "../typings/IRouterConfig";
 const routers: RoutersConfig = [
     {
         path: '/',
-        component: React.lazy(() => import('../layouts/TestLayout'))
+        component: () => import('../layouts/TestLayout')
     }
 ];
 
