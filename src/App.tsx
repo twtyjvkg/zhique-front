@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import { Router } from 'dva/router';
+import AuthorizedRoute from './components/Authorized/AuthorizedRoute';
+import routers from './config/routers';
+import { RouterProps } from "react-router";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC<RouterProps> = ({ history }) => (
+    <Router history={history}>
+        <Suspense fallback={<div>loading...</div>}>
+            <AuthorizedRoute routers={routers}/>
+        </Suspense>
+    </Router>
+)
 
 export default App;
