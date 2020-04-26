@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
-import { Router } from 'dva/router';
-import AuthorizedRoute from './components/Authorized/AuthorizedRoute';
 import { RouterProps } from 'react-router';
+import { Router } from 'dva/router';
 import routers from './config/routers';
+import AuthorizedRoute from './components/Authorized/AuthorizedRoute';
 
 const ZhiQue: React.FC<RouterProps> = ({ history }) => (
     <Router history={history}>
