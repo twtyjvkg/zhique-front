@@ -18,6 +18,6 @@ const AuthorizedRoute: React.FC<AuthorizedRouteProps> = ({ routers }) => (
                 })}/>
         )) }
     </Switch>
-)
+);
 
 export default AuthorizedRoute;
