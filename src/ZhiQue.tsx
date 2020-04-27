@@ -10,6 +10,6 @@ const ZhiQue: React.FC<RouterProps> = ({ history }) => (
             <AuthorizedRoute routers={routers} />
         </Suspense>
     </Router>
-)
+);
 
 export default ZhiQue;
