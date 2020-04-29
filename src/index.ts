@@ -8,6 +8,6 @@ const app = dva({
 window.dvaApp = app;
 
 // @ts-ignore
-app.router(ZhiQue)
+app.router(ZhiQue);
 
 app.start('#root');

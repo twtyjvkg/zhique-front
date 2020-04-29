@@ -1,4 +1,4 @@
-import { RoutersConfig } from "../typings/IRouterConfig";
+import { RoutersConfig } from '../typings/IRouterConfig';
 
 const routers: RoutersConfig = [
 ];
