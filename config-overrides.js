@@ -37,9 +37,9 @@ module.exports = override(
     addWebpackPlugin(new AntdDayjsWebpackPlugin()),
     // 添加build进度条
     addWebpackPlugin(new ProgressBarPlugin({
-            complete: '█',
-            format: `${chalk.green('Building')} [ ${chalk.green(':bar')} ] ':msg:' ${chalk.bold('(:percent)')}`,
-            clear: true
-        })
+        complete: '█',
+        format: `${chalk.green('Building')} [ ${chalk.green(':bar')} ] ':msg:' ${chalk.bold('(:percent)')}`,
+        clear: true
+    })
     )
 );

@@ -9,17 +9,20 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:@typescript-eslint/eslint-recommended',
 		'plugin:@typescript-eslint/recommended',
-		'prettier/@typescript-eslint',
+		'prettier/@typescript-eslint'
 	],
 	rules: {
 		'indent': [2, 4],
-		'linebreak-style': 0,
+		'linebreak-style': [0],
 		'quotes': [2, 'single'],
 		'semi': [2, 'always'],
 		'@typescript-eslint/ban-ts-ignore': 0,
-		'@typescript-eslint/explicit-function-return-type': 0,
+		'@typescript-eslint/explicit-function-return-type': [0, {
+			allowExpressions: true,
+			allowTypedFunctionExpressions: true
+		}],
+		'@typescript-eslint/no-var-requires': 0,
 		'react/prop-types': 0,
-
 	},
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
