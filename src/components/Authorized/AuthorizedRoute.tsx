@@ -1,9 +1,21 @@
 import React, { Component } from 'react';
-import { Route, RouteProps } from 'dva/router';
+import { RouteProps } from 'dva/router';
+import { connect } from 'dva';
+import * as H from 'history';
 
-export default class AuthorizedRoute extends Component<RouteProps> {
+interface AuthorizedRouteProps extends RouteProps {
+    history: H.History;
+}
+
+@connect()
+export default class AuthorizedRoute extends Component<AuthorizedRouteProps> {
+
+    componentDidMount(): void {
+        const { history } = this.props;
+        history.push('/123');
+    }
 
     render(): React.ReactNode {
-        return <Route {...this.props} />;
+        return this.props.children;
     }
 }
