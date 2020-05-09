@@ -1,8 +1,14 @@
-import Cookies from 'universal-cookie';
+import Cookies, { CookieGetOptions } from 'universal-cookie';
 
 const cookies = new Cookies();
 
 export const ACCESS_TOKEN = 'access_token';
+
+export function getAccessToken() {
+    return cookies.get(ACCESS_TOKEN, {
+        path: '/',
+    } as CookieGetOptions);
+}
 
 export function extractAccessTokenFromHash(hash: any): string | null {
     if (hash) {

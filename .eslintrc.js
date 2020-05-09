@@ -23,6 +23,7 @@ module.exports = {
 		}],
 		'@typescript-eslint/no-var-requires': 0,
 		'react/prop-types': 0,
+		'@typescript-eslint/no-explicit-any': 0,
 	},
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
